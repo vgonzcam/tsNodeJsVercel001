@@ -8,6 +8,9 @@ const app = express();
 app.get("/", (req, res) => {
   res.send("Express on Vercel");
 });
+app.get("/ping", (req, res) => {
+    res.send("pong 🏓");
+  });
 
 // Initialize server
 app.listen(5000, () => {
